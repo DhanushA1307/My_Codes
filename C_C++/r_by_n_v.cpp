@@ -1,6 +1,20 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+bool check(char c)
+{
+	switch(tolower(c))
+	{
+		case 'a':
+		case 'e':
+		case 'i':
+		case 'o':
+		case 'u':
+			return true;
+	}
+	return false;
+}
+
 int main(int argc, char** argv)
 {
 	string s;
