@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-bool check(char c)
+bool valid(char c)
 {
 	switch(tolower(c))
 	{
@@ -25,9 +25,9 @@ int main(int argc, char** argv)
 		if(s[i] == c)
 		{
 			int c = 0;
-			for(int j = i+1; j < l; j++)
+			for(int j = i+1; j < s.length(); j++)
 			{
-				if(valid(s[j])
+				if(valid(s[j]))
 				{
 					c++;
 					cout << s[j];
