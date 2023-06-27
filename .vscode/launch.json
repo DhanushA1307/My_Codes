@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "r_by_n_v",
+            "request": "launch",
+            "mainClass": "Java.replaced_by_next_vowel.r_by_n_v",
+            "projectName": "code_ba01a817"
+        },
+        {
+            "type": "java",
             "name": "max_num",
             "request": "launch",
             "mainClass": "Java.max_num.max_num",
