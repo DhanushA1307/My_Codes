@@ -16,7 +16,10 @@ public class r_by_n_v
             {
                 if(o.vowels(a[i]) && al.size() != 0)
                 {
-                    for(int j : al) System.out.print(j);
+                    for(int j : al) 
+                    {
+                        System.out.print(j);
+                    }
                     al.clear();
                 }
                 if(a[i] == b)
@@ -24,7 +27,10 @@ public class r_by_n_v
                     al.add(i);
                 }
             }
-            for(char i : a) System.out.print(i);   
+            for(char i : a)
+            {
+                System.out.print(i);
+            }   
         }
     }
     public Boolean vowels(char a)
