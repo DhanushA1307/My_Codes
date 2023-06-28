@@ -1,6 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+bool desc(const pair<int, int> &a, const pair<int, int> &b)
+{
+    return a.second > b.second;
+}
+
 int main(int argc, char** argv)
 {
     int R, C;
@@ -23,9 +28,10 @@ int main(int argc, char** argv)
             rows.push_back(i+1);
         }
     }
+    sort(rows.begin(), rows.end(), desc);
     if(!rows.empty())
     {
-        cout << *max_element(rows.begin(), rows.end());
+        cout << rows[0].second;
     }
     else
     {
