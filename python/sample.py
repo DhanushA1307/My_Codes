@@ -1,4 +1,3 @@
-
 def check(maxi, l):
 	for i in l:
 		if(i > maxi):
@@ -7,7 +6,7 @@ def check(maxi, l):
 
 
 a,b = map(int, input().split())
-lis = list(map(int, input().split())
+lis = list(map(int, input().split()))
 maxi = max(lis)
 l = []
 for i in lis:
