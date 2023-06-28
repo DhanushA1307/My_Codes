@@ -11,8 +11,14 @@ int main(int argc, char** argv)
     int R, C;
     cin >> R >> C;
     int mat[R][C];
-    for(int i = 0; i < R; i++) for(int j = 0; j < C; j++) cin >> mat[i][j];
-    vector<int> rows;
+    for(int i = 0; i < R; i++) 
+    {
+        for(int j = 0; j < C; j++) 
+        {
+            cin >> mat[i][j];
+        }
+    }
+    vector<pair<int, int>> rows;
     for(int i = 0; i < C; i++)
     {
         int c = 0;
@@ -25,7 +31,7 @@ int main(int argc, char** argv)
         }
         if(c != 0)
         {
-            rows.push_back(i+1);
+            rows.push_back(make_pair(c, i+1));
         }
     }
     sort(rows.begin(), rows.end(), desc);
@@ -37,4 +43,5 @@ int main(int argc, char** argv)
     {
         cout << "-1";
     }
+    cout << endl;
 }
