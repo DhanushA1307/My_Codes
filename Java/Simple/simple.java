@@ -1,3 +1,4 @@
+package Java.Simple;
 import java.util.*;
 
 class simple
