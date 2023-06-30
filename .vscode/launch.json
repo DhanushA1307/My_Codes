@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "f_n_p_o_y",
+            "request": "launch",
+            "mainClass": "Java.find_new_player_of_year.f_n_p_o_y",
+            "projectName": "code_ba01a817"
+        },
+        {
+            "type": "java",
             "name": "a_p_r",
             "request": "launch",
             "mainClass": "Java.alphabet_position_reversed.a_p_r",
