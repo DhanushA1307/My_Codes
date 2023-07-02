@@ -2,6 +2,6 @@ def A():
     a = 10
     return a
 
-val = male
+val = 'male'
 print(val)
 
