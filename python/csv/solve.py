@@ -12,9 +12,10 @@ classifier = dtc()
 classifier.fit(iris.data,iris.target)
 
 
-
-print(plt.figure(figsize = (15,10)))
-print(tree.plot_tree(classifier,filled = True))
+plt.figure(figsize=(15,10))
+tree.plot_tree(classifier, filled = True)
+#print(plt.figure(figsize = (15,10)))
+#print(tree.plot_tree(classifier,filled = True))
 
 
 
