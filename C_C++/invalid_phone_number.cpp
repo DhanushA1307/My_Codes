@@ -35,7 +35,7 @@ int main(int argc, char** argv)
         }
         else
         {
-            if(!valid(str))
+            if(valid(str))
             {
                 count++;
             }
