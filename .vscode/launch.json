@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "String_testCase",
+            "request": "launch",
+            "mainClass": "Java.testcase.String_testCase",
+            "projectName": "code_ba01a817"
+        },
+        {
+            "type": "java",
             "name": "_testcase",
             "request": "launch",
             "mainClass": "Java.testcase._testcase",
