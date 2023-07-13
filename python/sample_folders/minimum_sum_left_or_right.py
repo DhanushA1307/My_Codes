@@ -1,7 +1,9 @@
 l = list(map(int, input().split()))
 N = int(input())
+
 s1 = 0
 s2 = 0
+
 for i in range(len(l)):
     if l[i] != N:
         s1 += l[i]
