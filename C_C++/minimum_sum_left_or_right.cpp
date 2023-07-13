@@ -4,7 +4,7 @@ using namespace std;
 
 int main(int argc, char** argv)
 {
-    int N, s1 = 0, s2 = 0;
+    int N, s1 = 0, s2 = 0, m = 0;
     vector<int> v;
     while(cin >> N) v.push_back(N);
     cin >> N;
@@ -18,5 +18,13 @@ int main(int argc, char** argv)
         if(v[i] == N) break;
         s2 += v[i];
     }
-    cout << min(s1, s2) << endl;
+    if(s1 <= s2)
+    {
+        m = s1;
+    }
+    else
+    {
+        m = s2;
+    }
+    cout << m << endl;
 }
