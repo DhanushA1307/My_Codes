@@ -4,8 +4,14 @@ using namespace std;
 string bins(int o, int m)
 {
     string p = "";
-    
-
+    while(o > 0)
+    {
+        p += "1";
+        o--;
+    }
+    while(p.length() < m) p += "0";
+    //reverse(p.begin(), p.end());
+    return p;
 }
 
 int main(int argc, char** argv)
@@ -23,5 +29,14 @@ int main(int argc, char** argv)
     {
         string c = bins(v[i], m);
         mat.push_back(c);
+    }
+    //for(auto i : mat) cout << i << " ";
+    for(int i = 0; i < m; i++)
+    {
+        for(int j = 0; j < s.length(); j++)
+        {
+            cout << mat[j][i] << " ";
+        }
+        cout << endl;
     }
 }
