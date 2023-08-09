@@ -7,6 +7,6 @@ int main(int argc, char** argv)
     cin >> s;
     for(int i = 0; i < s.length(); i++)
     {
-        cout << tolower(s[i]) << " ";
+        cout << tolower(s[i]) << ":" << endl;;
     }
 }
