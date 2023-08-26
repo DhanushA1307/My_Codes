@@ -1,4 +1,4 @@
-package Java.replaced_by_next_vowel;
+package My_Codes.Java.replaced_by_next_vowel;
 import java.util.*;
 
 public class r_by_n_v

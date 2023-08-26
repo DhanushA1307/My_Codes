@@ -1,4 +1,4 @@
-package Java.max_num;
+package My_Codes.Java.max_num;
 import java.util.*;
 
 public class max_num

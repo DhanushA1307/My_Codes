@@ -1,6 +1,7 @@
+package My_Codes.Java.convert_c;
+
 import java.util.*;
 
-//Package Java.convert_c
 
 public class conver_c
 {
