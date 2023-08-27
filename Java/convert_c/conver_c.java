@@ -7,7 +7,7 @@ public class conver_c
 {
     public static void main(String[] args)
     {
-        Scanner sc = new Scanner(System.in);
+        try(Scanner sc = new Scanner(System.in)){
         int from = sc.nextInt();
         int to = sc.nextInt();
 
@@ -21,6 +21,6 @@ public class conver_c
             }
         }
 
-        for(Integer factor : allfactors) System.out.print(factor + " ");
+        for(Integer factor : allfactors) System.out.print(factor + " ");}
     }
 }
