@@ -30,7 +30,7 @@ int main()
         }
         if(N[i] >= '1' && N[i] <= '9')
         {
-            a.push_back(N[i] - '0');
+            a.push_back(i);
             j++;
         }
     }
