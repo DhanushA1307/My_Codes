@@ -1,7 +1,7 @@
 package My_Codes.Java.squares_and_cubes;
 
 import java.util.*;
-import java.io.*;
+//import java.io.*;
 
 public class sac
 {
