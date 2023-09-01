@@ -1,18 +1,18 @@
 import java.awt.Point;
-import java.util.Scanner;
+//import java.util.Scanner;
 
 class playfairCipher
 {
 	public static char[][] charTable;
 	public static Point[] positions;
 
-	private static String prepareText(String s,boolean chgJtoI)
+	private String prepareText(String s,boolean chgJtoI)
 	{
 		s = s.toUpperCase().replaceAll("[^A-Z]","");
 		return (chgJtoI ? s.replace("J","I") : s.replace("Q",""));
 	}
 
-	private static void createTbl(String key,boolean chgJtoI)
+	private void createTbl(String key,boolean chgJtoI)
 	{
 		charTable = new char[5][5];
 		positions = new Point[26];
@@ -80,7 +80,7 @@ class playfairCipher
 		return codec(sb,1);
 	}
 
-	private static String decode(String s)
+	private String decode(String s)
 	{
 		return codec(new StringBuilder(s),4);
 	}

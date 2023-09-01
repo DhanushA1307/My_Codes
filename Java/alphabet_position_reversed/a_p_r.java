@@ -1,4 +1,5 @@
-package My_Codes.Java.alphabet_position_reversed;
+package Java.alphabet_position_reversed;
+
 import java.util.*;
 
 public class a_p_r

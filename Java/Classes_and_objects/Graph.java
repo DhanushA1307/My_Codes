@@ -1,4 +1,5 @@
-package My_Codes.Java.Classes_and_objects;
+package Java.Classes_and_objects;
+
 import java.util.*;
 import java.util.LinkedList;
 

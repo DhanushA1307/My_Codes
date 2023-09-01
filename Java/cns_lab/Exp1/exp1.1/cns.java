@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class cns
 {
 	
-	public static String encode(String enc,int offset)
+	public String encode(String enc,int offset)
 	{
 		offset = offset % 26 +26;
 		StringBuilder encoded = new StringBuilder();
@@ -28,7 +28,7 @@ public class cns
 		return encoded.toString();
 	}
 
-	public static String decode(String enc,int offset)
+	public String decode(String enc,int offset)
 	{
 		return encode(enc,26-offset);
 	}
