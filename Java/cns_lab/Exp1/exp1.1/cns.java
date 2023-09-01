@@ -36,11 +36,13 @@ public class cns
 	public static void main(String[] args)
 	{
 		cns obj = new cns();
-		Scanner sc = new Scanner(System.in);
-		String s = sc.nextLine();
-		int n = sc.nextInt();
-		System.out.println(s+" "+n);
-		System.out.println("Encode"+" "+obj.encode(s,n));
-		System.out.println("Decode"+" "+obj.decode(obj.encode(s,n),n));
+		try(Scanner sc = new Scanner(System.in))
+		{
+			String s = sc.nextLine();
+			int n = sc.nextInt();
+			System.out.println(s+" "+n);
+			System.out.println("Encode"+" "+obj.encode(s,n));
+			System.out.println("Decode"+" "+obj.decode(obj.encode(s,n),n));
+		}
 	}
 }

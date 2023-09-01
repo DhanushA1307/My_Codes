@@ -1,4 +1,4 @@
-package My_Codes.Java.minimum_sum_of_left_and_right;
+package Java.minimum_sum_of_left_and_right;
 import java.util.*;
 
 public class m_s_o_l_a_r

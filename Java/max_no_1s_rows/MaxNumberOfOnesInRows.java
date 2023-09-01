@@ -1,4 +1,4 @@
-package My_Codes.Java.max_no_1s_rows;
+package Java.max_no_1s_rows;
 
 import java.util.*;
 

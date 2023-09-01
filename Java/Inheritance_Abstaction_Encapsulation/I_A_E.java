@@ -1,4 +1,4 @@
-package My_Codes.Java.Inheritance_Abstaction_Encapsulation;
+package Java.Inheritance_Abstaction_Encapsulation;
 import java.util.*;
 
 class Points

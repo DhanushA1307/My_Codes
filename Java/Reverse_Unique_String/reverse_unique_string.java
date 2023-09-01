@@ -1,4 +1,4 @@
-package My_Codes.Java.Reverse_Unique_String;
+package Java.Reverse_Unique_String;
 
 import java.util.*;
 

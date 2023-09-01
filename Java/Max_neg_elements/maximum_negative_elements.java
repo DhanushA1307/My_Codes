@@ -1,4 +1,4 @@
-package My_Codes.Java.Max_neg_elements;
+package Java.Max_neg_elements;
 import java.util.*;
 
 public class maximum_negative_elements

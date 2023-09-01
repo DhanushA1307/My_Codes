@@ -1,4 +1,4 @@
-package My_Codes.Java.find_new_player_of_year;
+package Java.find_new_player_of_year;
 import java.util.*;
 
 public class f_n_p_o_y
