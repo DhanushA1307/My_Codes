@@ -54,7 +54,7 @@ void Prints(struct Node* head)
     }
 }
 
-
+//Count no of nodes in LinkedList
 int no_of_nodes_in_linkedlist(struct Node* head)
 {
     int c = 0;
