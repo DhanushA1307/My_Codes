@@ -8,15 +8,22 @@ struct Node
     struct Node* next; //allocating the next address
 };
 
+//create a node function for allocating the value and the address
+struct Node* create(int val)
+{
+    struct Node* ptr = (struct Node*)malloc(sizeof(struct Node));
+    ptr->val = val;
+    ptr->next = NULL;
+    return ptr;
+}
 
-//create an insert function for Node to the Head
+
+//create an insert function for LinkedList to the Head
 struct Node* add(struct Node* head, int val)
 {
     if(head == NULL)
     {
-        head = (struct Node*)malloc(sizeof(struct Node));
-        head->val = val;
-        head->next = NULL;
+        head = create(val);
         return head;
     }
 
@@ -26,11 +33,8 @@ struct Node* add(struct Node* head, int val)
     { 
         ptr=ptr->next;
     }
-    struct Node* last = (struct Node*)malloc(sizeof(struct Node));
-    last->val = val;
-    last->next = NULL; 
 
-    ptr->next = last;
+    ptr->next = create(val);
     return head;
 }
 
@@ -50,6 +54,18 @@ void Prints(struct Node* head)
     }
 }
 
+
+int no_of_nodes_in_linkedlist(struct Node* head)
+{
+    int c = 0;
+    struct Node* ptr = head;
+    while(ptr != NULL)
+    {
+        c++;
+        ptr = ptr->next;
+    }
+    return c;
+}
 
 int main(int argc, char** argv)
 {
