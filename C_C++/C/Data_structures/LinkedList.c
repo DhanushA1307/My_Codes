@@ -8,6 +8,8 @@ struct Node
     struct Node* next; //allocating the next address
 };
 
+
+//create an insert function for Node to the Head
 struct Node* add(struct Node* head, int val)
 {
     if(head == NULL)
@@ -32,6 +34,23 @@ struct Node* add(struct Node* head, int val)
     return head;
 }
 
+
+// To print the LinkedList
+void Prints(struct Node* head)
+{
+    struct Node* ptr = head;
+    while(ptr != NULL)
+    {
+        printf("%d->", ptr->val);
+        ptr = ptr->next;
+    }
+    if(ptr == NULL)
+    {
+        printf("NULL\n");
+    }
+}
+
+
 int main(int argc, char** argv)
 {
     int N;
@@ -44,12 +63,6 @@ int main(int argc, char** argv)
         head = add(head, v);
     }
     
-    struct Node* ptr = head;
-    while(ptr != NULL)
-    {
-        printf("%d ", ptr->val);
-        ptr = ptr->next;
-    }
-
+    Prints(head); // calls to print the linkedlist
     return 0;
 }
