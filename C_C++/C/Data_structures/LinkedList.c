@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<stdlib.h>
-
 //typedef struct Node Node; // creating the alias name for the "struct node"  
 
 struct Node
@@ -9,19 +8,22 @@ struct Node
     struct Node* next; //allocating the next address
 };
 
-struct Node* add(Node* head, int val)
+struct Node* add(struct Node* head, int val)
 {
     if(head == NULL)
     {
         head = (struct Node*)malloc(sizeof(struct Node));
         head->val = val;
         head->next = NULL;
-        return;
+        return head;
     }
 
     //traverse the head upto NULL
     struct Node* ptr = head;
-    while(ptr->next != NULL) { ptr=ptr->next; }
+    while(ptr->next != NULL)
+    { 
+        ptr=ptr->next;
+    }
     struct Node* last = (struct Node*)malloc(sizeof(struct Node));
     last->val = val;
     last->next = NULL; 
@@ -38,13 +40,15 @@ int main(int argc, char** argv)
     while(N--)
     {
         int v;
-        scanf("%d",v);
+        scanf("%d",&v);
         head = add(head, v);
     }
-
-    while(head->next != NULL)
+    
+    struct Node* ptr = head;
+    while(ptr != NULL)
     {
-        printf("%d", head->val);
+        printf("%d ", ptr->val);
+        ptr = ptr->next;
     }
 
     return 0;
