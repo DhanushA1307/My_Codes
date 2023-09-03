@@ -40,7 +40,7 @@ struct Node* add(struct Node* head, int val)
 
 
 // To print the LinkedList
-void Prints(struct Node* head)
+void Print_value_and_address(struct Node* head)
 {
     struct Node* ptr = head;
     while(ptr != NULL)
@@ -64,7 +64,31 @@ int no_of_nodes_in_linkedlist(struct Node* head)
         c++;
         ptr = ptr->next;
     }
+    /*
+        Alternative method
+        for(struct Node* ptr = head; ptr != NULL; ptr = ptr->next) c++;
+    */
     return c;
+}
+
+void Print_value_only(struct Node* value)
+{
+    printf("%d\n", value->val);
+}
+
+void Print_address_only(struct Node* value)
+{
+    printf("%p\n", value);
+}
+
+struct Node* get_middle_element(struct Node* head)
+{
+    struct Node* slow = head;
+    for(struct Node* fast = head; fast != NULL; fast = fast->next->next)
+    {
+        slow = slow->next;
+    }
+    return slow;
 }
 
 int main(int argc, char** argv)
@@ -79,6 +103,9 @@ int main(int argc, char** argv)
         head = add(head, v);
     }
     
-    Prints(head); // calls to print the linkedlist
+    Print_value_and_address(head); // calls to print the linkedlist
+    
+    printf(Print_value_only(get_middle_element(head)));
+    printf(Print_address_only(get_middle_element(head)));
     return 0;
 }
