@@ -91,6 +91,17 @@ struct Node* get_middle_element(struct Node* head)
     return slow;
 }
 
+int get_the_data_from_index_value_without_the_limit(struct Node* head, int in)
+{
+    int d = -1, i = 0;
+    for(struct Node* ptr = head; i <= in; i++, ptr = ptr->next)
+    {
+        if(ptr == NULL) return -1;
+        else d = ptr->val;
+    }
+    return d;
+}
+
 int main(int argc, char** argv)
 {
     int N;
