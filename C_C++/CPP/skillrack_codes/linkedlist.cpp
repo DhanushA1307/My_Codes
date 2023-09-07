@@ -42,6 +42,16 @@ template<typename T> class LinkedList
                 head = head->next;
             }
         }
+
+        node get_middle_element(node head)
+        {
+            node slow = head;
+            for(node fast = head; fast != nullptr && fast->next != nullptr; fast = fast->next->next)
+            {
+                slow = slow->next;
+            }
+            return slow;
+        }
 };
 
 class solution
