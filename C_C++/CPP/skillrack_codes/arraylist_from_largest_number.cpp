@@ -47,7 +47,7 @@ int main(int argc, char** argv)
     
     sol.maxi_two_vectors(max(a.size(), b.size()), max(a.size(), b.size()) - min(a.size(), b.size()), a, b);
     
-    if(!(a.size() = b.size()))
+    if(!(a.size() == b.size()))
     {
         
         vector<int> c = sol.maxi(a,b);
