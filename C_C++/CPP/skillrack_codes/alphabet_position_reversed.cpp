@@ -39,6 +39,7 @@ int main(int argc, char** argv)
     while(i >= 0)
     {
         cout << arr[i] << " ";
+        i--;
         cout << endl;
     }
 }
