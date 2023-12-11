@@ -38,6 +38,13 @@ struct Node* add_back(struct Node* head, int val)
     return head;
 }
 
+//create an insert function for LinkedList to the Head in the front
+struct Node* add_front(struct Node* head, int val){
+    struct Node *new_node = create(val);
+    new_node->next = head;
+    head = new_node;
+    return head;
+}
 
 // To print the LinkedList
 void Print_value_and_address(struct Node* head)
