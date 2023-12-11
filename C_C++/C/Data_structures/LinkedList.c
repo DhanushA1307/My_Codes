@@ -19,7 +19,7 @@ struct Node* create(int val)
 
 
 //create an insert function for LinkedList to the Head
-struct Node* add(struct Node* head, int val)
+struct Node* add_back(struct Node* head, int val)
 {
     if(head == NULL)
     {
@@ -111,7 +111,7 @@ int main(int argc, char** argv)
     {
         int v;
         scanf("%d",&v);
-        head = add(head, v);
+        head = add_back(head, v);
     }
     
     Print_value_and_address(head); // calls to print the linkedlist
