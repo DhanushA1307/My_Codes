@@ -6,11 +6,11 @@ import java.util.LinkedList;
 public class Graph
 {
     int V;
-    LinkedList<Integer> adj[];
+    LinkedList<Integer>[] adj;
     Graph(int v)
     {
         V = v;
-        LinkedList<Integer>adj[] = new LinkedList[v];
+        adj = new LinkedList[v];
         for(int i=0;i<v;i++){
             adj[i] = new LinkedList<>();
         }
