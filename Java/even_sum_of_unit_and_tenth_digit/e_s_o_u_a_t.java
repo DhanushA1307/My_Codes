@@ -1,4 +1,4 @@
-package Java.even_sum_of_unit_and_tenth_digit;
+package My_Codes.Java.even_sum_of_unit_and_tenth_digit;
 import java.util.*;
 
 public class e_s_o_u_a_t

@@ -1,4 +1,4 @@
-package Java.Sample;
+package My_Codes.Java.Sample;
 import java.util.*;
 
 class Employee

@@ -1,3 +1,4 @@
+package My_Codes.Java.samples;
 import java.util.*;
 
 public class Samples {

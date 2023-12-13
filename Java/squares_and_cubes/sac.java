@@ -1,4 +1,4 @@
-package Java.squares_and_cubes;
+package My_Codes.Java.squares_and_cubes;
 
 import java.util.*;
 //import java.io.*;

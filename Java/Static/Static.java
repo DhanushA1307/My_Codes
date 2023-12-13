@@ -1,4 +1,4 @@
-package Java.Static;
+package My_Codes.Java.Static;
 import java.util.*;
 
 class staticDemo

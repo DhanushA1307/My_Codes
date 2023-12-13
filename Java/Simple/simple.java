@@ -1,4 +1,4 @@
-package Java.Simple;
+package My_Codes.Java.Simple;
 import java.util.*;
 
 class simple

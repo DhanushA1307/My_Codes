@@ -1,4 +1,4 @@
-package Java.testcase;
+package My_Codes.Java.testcase;
 
 import java.util.*;
 

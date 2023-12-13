@@ -1,4 +1,4 @@
-package Java.reverse_string_except_vowel;
+package My_Codes.Java.reverse_string_except_vowel;
 
 import java.util.*;
 

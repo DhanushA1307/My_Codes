@@ -1,4 +1,4 @@
-package Java.alphabet_position_reversed;
+package My_Codes.Java.alphabet_position_reversed;
 
 import java.util.*;
 
