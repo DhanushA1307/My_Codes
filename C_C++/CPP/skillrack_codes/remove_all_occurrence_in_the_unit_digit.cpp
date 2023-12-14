@@ -2,16 +2,18 @@
 using namespace std;
 
 int main(int argc, char** argv){
-    string s;
+    string s, c = "";
     cin >> s;
     bool flag = false;
     for(int i = 0; i < s.length(); i++){
         if(s[i] != s[s.length()-1]){
             flag = true;
-            cout << s[i];
+            c += s[i];
         }
     }
     if(!flag){
         cout << "-1"; 
+        return 0;
     }
+    cout << stoi(c);
 }
