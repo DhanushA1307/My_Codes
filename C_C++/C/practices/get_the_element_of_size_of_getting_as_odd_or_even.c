@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<alloc.h>
+#include<malloc.h>
 
 int* func(int N){
     int* arr = malloc(sizeof(int)*N);
